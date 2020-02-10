@@ -14,7 +14,28 @@ import Five from './Five';
 function RoutingApp(){
     return (
         <Router>
-
+            <ul>
+                <li><Link to ='/one'>One</Link></li>
+                <li><Link to ='/two'>Two</Link></li>
+                <li><Link to ='/three'>Three</Link></li>
+                <li><Link to ='/four'>Four</Link></li>
+                <li><Link to ='/five'>Five</Link></li>
+            </ul>
+            <Route path= '/one'>
+                <One />
+            </Route>
+            <Route path= '/two'>
+                <Two />
+            </Route>
+            <Route path= '/three'>
+                <Three />
+            </Route>
+            <Route path= '/four'>
+                <Four />
+            </Route>
+            <Route path= '/five'>
+                <Five />
+            </Route>
         </Router>
     )
 }
